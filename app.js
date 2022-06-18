@@ -2,17 +2,26 @@ function Maths(a) {
     var num1=document.querySelector("#num1").value;
     var num2=document.querySelector("#num2").value;
     if (a=='add') {
-        console.log(parseInt(num1)+parseInt(num2));
+        var c = parseInt(num1)+parseInt(num2)
+        document.querySelector("#result").innerHTML= '<div class="alert alert-primary mt-3" role="alert">'+c+'</div>'
+       
     }
     else if(a=='sub'){
-        console.log(parseInt(num1)-parseInt(num2));
+        var c=parseInt(num1)-parseInt(num2)
+        document.querySelector("#result").innerHTML= '<div class="alert alert-primary mt-3" role="alert">'+c+'</div>'
+
+     
     }
     else if(a=='multi'){
-        console.log(parseInt(num1)*parseInt(num2));
+        var c=parseInt(num1)*parseInt(num2)
+        document.querySelector("#result").innerHTML= '<div class="alert alert-primary mt-3" role="alert">'+c+'</div>'
+
 
     }
     else{
-        console.log(parseInt(num1)/parseInt(num2));
+                var c=parseInt(num1)/parseInt(num2)
+               document.querySelector("#result").innerHTML= '<div class="alert alert-primary mt-3" role="alert">'+c+'</div>'
+
        
     }
     
